@@ -180,7 +180,11 @@
 // Heaters / Fans
 //
 #define HEATER_0_PIN                        PC3   // HEATER1
-#define HEATER_1_PIN                        PB0   // HEATER2
+#if HOTENDS == 1
+  #define FAN1_PIN                          PB0
+#else
+  #define HEATER_1_PIN                      PB0   // HEATER2
+#endif
 #define HEATER_BED_PIN                      PA0   // HOT BED
 
 #define FAN_PIN                             PB1   // FAN
