@@ -2416,20 +2416,19 @@
  *   root of your SD card, together with the compiled firmware.
  */
 //#define TFT_CLASSIC_UI
-//#define TFT_COLOR_UI
-#define TFT_LVGL_UI
+#define TFT_COLOR_UI
+//#define TFT_LVGL_UI
 
-#if ENABLED(TFT_LVGL_UI)
-  #define MKS_WIFI_MODULE  // MKS WiFi module
-  /**
-   * FRENCH KEYBOARD
-   * 
-   * Select the french keyboard layoud in MKS_UI
-   *  if defined  azerty layout
-   *  if npt      qwerty layout
-   */
-  //#define FRENCH_KEYBOARD
-#endif
+#define MKS_WIFI_MODULE  // MKS WiFi module
+  
+/**
+ * FRENCH KEYBOARD
+ * 
+ * Select the french keyboard layoud in MKS_UI
+ *  if defined  azerty layout
+ *  if npt      qwerty layout
+ */
+//#define FRENCH_KEYBOARD
 
 /**
  * TFT Rotation. Set to one of the following values:
